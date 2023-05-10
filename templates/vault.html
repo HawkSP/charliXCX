@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open The Vault</title>
+
+    <!-- Add these meta tags to ensure the page doesn't cache so the browser always gets the latest songs -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .vault {
+            width: 100%;
+            height: 100%;
+            max-width: 600px;
+            max-height: 600px;
+            animation: zoom 1s ease-in-out 5s forwards;
+        }
+
+        @keyframes zoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(2); }
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+</head>
+<body>
+    <img class="vault" src="static/vault.gif">
+
+    <script>
+            window.onload = function() {
+                setTimeout(function() {
+                    window.location.href = "/generate_songs";
+                }, 6000);
+            };
+        </script>
+</body>
+</html>
