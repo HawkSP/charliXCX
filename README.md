@@ -61,7 +61,7 @@ pip install -r requirements.txt
 3. Run the main Python file.
 
 ```bash
-python train.py
+python app_charli.py
 ```
 
 During execution, the program will ask you to input a 4-digit vault code. Enter any 4-digit number and the program will begin generating songs based on this vault code.
